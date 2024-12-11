@@ -1,0 +1,307 @@
+/* Global Styles */
+* {
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+QWidget {
+    background-color: #ffffff;
+    color: #2c3e50;
+    font-size: 14px;
+}
+
+/* Typography */
+#page-header {
+    color: #1a365d;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+#page-subtitle {
+    color: #4a5568;
+    font-size: 18px;
+}
+
+#section-header {
+    color: #2d3748;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 16px 0;
+}
+
+/* Sidebar Styles */
+#sidebar {
+    background: #1a365d;
+    min-width: 280px;
+    max-width: 280px;
+    padding: 0;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#logo-container {
+    background-color: #234876;
+    padding: 24px;
+    margin-bottom: 24px;
+}
+
+#sidebar-title {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 12px;
+}
+
+#sidebar QPushButton {
+    background-color: transparent;
+    border: none;
+    color: #e2e8f0;
+    padding: 16px 24px;
+    text-align: left;
+    font-size: 16px;
+    border-radius: 0;
+    margin: 4px 0;
+}
+
+#sidebar QPushButton:hover {
+    background-color: #234876;
+    color: #ffffff;
+}
+
+#sidebar QPushButton[active="true"] {
+    background-color: #2d4e8c;
+    color: #ffffff;
+    border-left: 4px solid #63b3ed;
+}
+
+#logout-button {
+    margin: 24px 0 !important;
+    color: #fc8181 !important;
+}
+
+#logout-button:hover {
+    background-color: #742a2a !important;
+    color: #fff5f5 !important;
+}
+
+/* Top Bar Styles */
+#top-bar {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e2e8f0;
+    padding: 16px 24px;
+}
+
+#search-container {
+    background-color: #f7fafc;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 0 16px;
+    max-width: 400px;
+}
+
+#search-container:focus-within {
+    border-color: #63b3ed;
+}
+
+#search-input {
+    background-color: transparent;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    color: #2d3748;
+}
+
+#search-input::placeholder {
+    color: #a0aec0;
+}
+
+#search-input:focus {
+    outline: none;
+}
+
+/* Card Styles */
+#stat-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 24px;
+    margin: 8px;
+    min-width: 280px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+#stat-card:hover {
+    border-color: #63b3ed;
+    transform: translateY(-2px);
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#stat-title {
+    color: #4a5568;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+#stat-value {
+    color: #2d3748;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+/* Table Styles */
+QTableWidget {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 16px;
+    gridline-color: #edf2f7;
+}
+
+QTableWidget::item {
+    padding: 12px 16px;
+    border-bottom: 1px solid #edf2f7;
+    color: #2d3748;
+}
+
+QTableWidget::item:selected {
+    background-color: #ebf8ff;
+    color: #2b6cb0;
+}
+
+QHeaderView::section {
+    background-color: #f7fafc;
+    padding: 16px;
+    border: none;
+    border-bottom: 2px solid #e2e8f0;
+    font-weight: bold;
+    color: #4a5568;
+    font-size: 14px;
+}
+
+
+/* Form Styles */
+QLineEdit, QTextEdit, QComboBox {
+    background-color: #ffffff;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 12px 16px;
+    font-size: 16px;
+    color: #2d3748;
+    min-height: 24px;
+}
+
+QLineEdit:focus, QTextEdit:focus, QComboBox:focus {
+    border-color: #63b3ed;
+    outline: none;
+}
+
+QLineEdit:hover, QTextEdit:hover, QComboBox:hover {
+    border-color: #63b3ed;
+}
+
+QLineEdit::placeholder, QTextEdit::placeholder {
+    color: #a0aec0;
+}
+
+/* Login Window Styles */
+#login-container {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 48px;
+    min-width: 420px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#login-title {
+    color: #1a365d;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 24px 0 8px 0;
+}
+
+#login-subtitle {
+    color: #4a5568;
+    font-size: 18px;
+    margin-bottom: 32px;
+}
+
+/* Button Styles */
+QPushButton {
+    background: linear-gradient(90deg, #10a37f, #1a7f64); /* Green gradient */
+    color: #ffffff;
+    border: none;
+    border-radius: 8px; /* Subtle rounding */
+    padding: 8px 16px; /* Medium padding */
+    font-size: 14px; /* Standard size */
+    font-weight: bold;
+    min-height: 40px; /* Standard height */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    transition: background 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+QPushButton:hover {
+    background: linear-gradient(90deg, #15b38a, #22826b); /* Brighter green gradient */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Elevated shadow */
+    transform: scale(1.02); /* Slight enlargement */
+}
+
+QPushButton:pressed {
+    background: linear-gradient(90deg, #0e8e6b, #176a55); /* Darker green gradient */
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3); /* Inner shadow */
+    transform: scale(0.98); /* Slight compression */
+}
+
+/* Table Action Buttons */
+QPushButton[action="true"] {
+    background-color: transparent;
+    color: #87CEFA; /* Light Sky Blue */
+    border: 2px solid #87CEFA;
+    padding: 6px 10px;
+    min-height: 24px;
+    font-size: 10px;
+    margin: 4px;
+}
+
+QPushButton[action="true"]:hover {
+    background-color: #87CEFA;
+    color: #ffffff;
+}
+
+/* Table Action Delete Button */
+QPushButton[action="delete"] {
+    border-color: #e53e3e;
+    color: #e53e3e;
+}
+
+QPushButton[action="delete"]:hover {
+    background-color: #e53e3e;
+    color: #ffffff;
+}
+
+/* Scrollbar Styles */
+QScrollBar:vertical {
+    background-color: #f7fafc;
+    width: 12px;
+    margin: 0;
+}
+
+QScrollBar::handle:vertical {
+    background-color: #cbd5e0;
+    border-radius: 6px;
+    min-height: 24px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background-color: #a0aec0;
+}
+
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    height: 0px;
+}
+
+QScrollBar::add-page:vertical,
+QScrollBar::sub-page:vertical {
+    background: none;
+}
